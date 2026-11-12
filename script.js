@@ -1283,3 +1283,8 @@ body.light-mode .home-content p {
         animation-iteration-count: 1 !important;
     }
 }
+
+#contact {
+    scroll-margin-top: 25px;
+}
+
