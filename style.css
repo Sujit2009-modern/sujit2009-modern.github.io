@@ -1296,94 +1296,80 @@ body {
     }
 }
 
-/* HOME SECTION - LIGHT THEME FIX */
 
-body.light-mode .home-content h1 {
-    color: #172033;
-}
-
-body.light-mode .home-content h1 span {
-    color: #2563EB;
-}
-
-body.light-mode .home-content h2 {
-    color: #6D28D9;
-}
-
-body.light-mode .home-content p {
-    color: #334155;
-}
-
-body.light-mode .highlight-card {
-    background-color: #FFFFFF;
-    border-color: #CBD5E1;
-}
-
-body.light-mode .highlight-card h3 {
-    color: #2563EB;
-}
-
-body.light-mode .highlight-card p {
-    color: #334155;
-}
-
-body.light-mode .home-button {
-    color: #FFFFFF;
-}
-
-
-/* =====================================
-   COMPLETE LIGHT THEME
-   ===================================== */
+/* ==========================================
+   PREMIUM AURORA LIGHT THEME
+   ========================================== */
 
 body.light-mode {
-    background-color: #F1F5F9;
-    color: #172033;
+    background:
+        radial-gradient(circle at 85% 5%, #DCEBFF 0, transparent 28%),
+        radial-gradient(circle at 10% 85%, #EDE4FF 0, transparent 30%),
+        #F4F7FF;
+    color: #253451;
+    transition: background 0.4s ease, color 0.4s ease;
 }
 
-/* Sidebar and navigation */
-body.light-mode .sidebar,
-body.light-mode nav {
-    background-color: #FFFFFF;
-    border-color: #CBD5E1;
+/* SIDEBAR */
+body.light-mode .sidebar {
+    background: rgba(255, 255, 255, 0.88);
+    backdrop-filter: blur(16px);
+    border-right: 1px solid #DCE6FA;
+    box-shadow: 5px 0 25px rgba(51, 80, 150, 0.08);
 }
 
-body.light-mode .sidebar a,
-body.light-mode nav a {
-    color: #1E40AF;
+body.light-mode .sidebar a {
+    color: #405477;
+    font-size: 15px;
+    border-radius: 10px;
+    transition: 0.3s ease;
 }
 
-body.light-mode .sidebar a:hover,
-body.light-mode nav a:hover {
-    background-color: #DBEAFE;
-    color: #1D4ED8;
+body.light-mode .sidebar a:hover {
+    background: linear-gradient(100deg, #E4EDFF, #F0E9FF);
+    color: #5545C7;
+    transform: translateX(4px);
 }
 
-/* Main section cards */
+/* MAIN SECTION CARDS */
 body.light-mode .card {
-    background-color: #FFFFFF;
-    color: #334155;
-    border-color: #CBD5E1;
-    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.06);
+    background: rgba(255, 255, 255, 0.90);
+    backdrop-filter: blur(12px);
+    color: #35445F;
+    border: 1px solid #DFE8FA;
+    border-radius: 18px;
+    padding: 22px;
+    box-shadow: 0 8px 28px rgba(48, 75, 140, 0.07);
+    transition: 0.3s ease;
 }
 
-/* Section headings */
+body.light-mode .card:hover {
+    border-color: #A9BFFA;
+    box-shadow: 0 12px 32px rgba(77, 92, 180, 0.13);
+    transform: translateY(-3px);
+}
+
+/* SECTION HEADINGS */
 body.light-mode .card h1,
-body.light-mode .card h2,
+body.light-mode .card h2 {
+    background: linear-gradient(90deg, #2563EB, #7955D9);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
 body.light-mode #about h1,
 body.light-mode #education h1 {
-    color: #1D4ED8;
-    border-color: #BFDBFE;
+    border-color: #DCE5FA;
 }
 
-/* Paragraphs and lists */
+/* BODY TEXT */
 body.light-mode .card p,
-body.light-mode .card li,
-body.light-mode .education-content li {
-    color: #334155;
+body.light-mode .card li {
+    color: #475875;
 }
 
-/* Inner cards */
+/* INNER CARDS */
 body.light-mode .education-content,
 body.light-mode .skill-category,
 body.light-mode .goals-content,
@@ -1392,23 +1378,38 @@ body.light-mode .workshop-card,
 body.light-mode .project-card,
 body.light-mode .volunteering-card,
 body.light-mode .highlight-card {
-    background-color: #F8FAFC;
-    color: #334155;
-    border-color: #CBD5E1;
+    background: linear-gradient(145deg, #FFFFFF, #F5F7FF);
+    color: #35445F;
+    border: 1px solid #E0E7F5;
+    border-radius: 14px;
+    box-shadow: 0 5px 16px rgba(57, 76, 130, 0.05);
+    transition: 0.3s ease;
 }
 
-/* Inner card headings */
+body.light-mode .education-content:hover,
+body.light-mode .skill-category:hover,
+body.light-mode .goals-content:hover,
+body.light-mode .certificate-card:hover,
+body.light-mode .workshop-card:hover,
+body.light-mode .project-card:hover,
+body.light-mode .highlight-card:hover {
+    border-color: #A9BFFA;
+    box-shadow: 0 9px 24px rgba(79, 70, 180, 0.10);
+}
+
+/* INNER CARD HEADINGS */
 body.light-mode .education-content h3,
 body.light-mode .skill-category h3,
 body.light-mode .certificate-card h3,
 body.light-mode .workshop-card h3,
 body.light-mode .project-card h3,
 body.light-mode .highlight-card h3 {
-    color: #1D4ED8;
+    color: #365BD6;
 }
 
-/* Inner card paragraphs and lists */
+/* INNER CARD TEXT */
 body.light-mode .education-content p,
+body.light-mode .education-content li,
 body.light-mode .skill-category li,
 body.light-mode .goals-content p,
 body.light-mode .certificate-card p,
@@ -1418,16 +1419,105 @@ body.light-mode .project-card p,
 body.light-mode .volunteering-card p,
 body.light-mode .volunteering-card li,
 body.light-mode .highlight-card p {
-    color: #334155;
+    color: #52627D;
 }
 
-/* Links */
+/* LINKS */
 body.light-mode .card a:not(.contact-button):not(.certificate-button):not(.social-button) {
-    color: #1D4ED8;
+    color: #365BD6;
 }
 
-/* Footer */
+/* HOME SECTION */
+body.light-mode .home-content h1 {
+    color: #172B4D;
+}
+
+body.light-mode .home-content h1 span {
+    color: #3867E8;
+}
+
+body.light-mode .home-content h2 {
+    color: #7955D9;
+}
+
+body.light-mode .home-content p {
+    color: #52627D;
+}
+
+/* HOME HIGHLIGHTS */
+body.light-mode .highlight-card h3 {
+    color: #3867E8;
+}
+
+/* WELCOME SECTION */
+body.light-mode .welcome-section {
+    background: linear-gradient(120deg, #FFFFFF, #E9F0FF);
+    color: #253451;
+    border: 1px solid #DCE6FA;
+    box-shadow: 0 8px 22px rgba(51, 80, 150, 0.07);
+}
+
+/* SOCIAL BUTTONS */
+body.light-mode .social-button {
+    background: linear-gradient(120deg, #FFFFFF, #EDF2FF);
+    color: #365BD6;
+    border: 1px solid #DCE5FA;
+}
+
+body.light-mode .social-button:hover {
+    background: linear-gradient(120deg, #3867E8, #7955D9);
+    color: #FFFFFF;
+}
+
+/* BUTTONS */
+body.light-mode #welcomeButton,
+body.light-mode #nameButton,
+body.light-mode .home-button,
+body.light-mode .contact-button,
+body.light-mode .certificate-button {
+    background: linear-gradient(120deg, #3867E8, #7955D9);
+    color: #FFFFFF;
+    border: none;
+    box-shadow: 0 5px 15px rgba(79, 70, 200, 0.20);
+}
+
+body.light-mode #welcomeButton:hover,
+body.light-mode #nameButton:hover,
+body.light-mode .home-button:hover,
+body.light-mode .contact-button:hover,
+body.light-mode .certificate-button:hover {
+    background: linear-gradient(120deg, #284FC4, #6342C5);
+    transform: translateY(-3px);
+}
+
+/* INPUT */
+body.light-mode #visitorName {
+    background: #FFFFFF;
+    color: #253451;
+    border: 1px solid #C8D6F0;
+}
+
+/* CLOCK AND DATE */
+body.light-mode #digitalClock,
+body.light-mode #currentDate {
+    color: #365BD6;
+}
+
+body.light-mode #timeGreeting {
+    color: #7955D9;
+}
+
+/* FOOTER */
 body.light-mode footer {
-    color: #334155;
+    color: #66758F;
 }
 
+/* SMOOTH THEME TRANSITIONS */
+body.light-mode .card,
+body.light-mode .sidebar,
+body.light-mode .sidebar a,
+body.light-mode .education-content,
+body.light-mode .skill-category,
+body.light-mode .project-card {
+    transition: all 0.3s ease;
+}
