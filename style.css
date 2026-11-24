@@ -1330,3 +1330,104 @@ body.light-mode .highlight-card p {
 body.light-mode .home-button {
     color: #FFFFFF;
 }
+
+
+/* =====================================
+   COMPLETE LIGHT THEME
+   ===================================== */
+
+body.light-mode {
+    background-color: #F1F5F9;
+    color: #172033;
+}
+
+/* Sidebar and navigation */
+body.light-mode .sidebar,
+body.light-mode nav {
+    background-color: #FFFFFF;
+    border-color: #CBD5E1;
+}
+
+body.light-mode .sidebar a,
+body.light-mode nav a {
+    color: #1E40AF;
+}
+
+body.light-mode .sidebar a:hover,
+body.light-mode nav a:hover {
+    background-color: #DBEAFE;
+    color: #1D4ED8;
+}
+
+/* Main section cards */
+body.light-mode .card {
+    background-color: #FFFFFF;
+    color: #334155;
+    border-color: #CBD5E1;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.06);
+}
+
+/* Section headings */
+body.light-mode .card h1,
+body.light-mode .card h2,
+body.light-mode #about h1,
+body.light-mode #education h1 {
+    color: #1D4ED8;
+    border-color: #BFDBFE;
+}
+
+/* Paragraphs and lists */
+body.light-mode .card p,
+body.light-mode .card li,
+body.light-mode .education-content li {
+    color: #334155;
+}
+
+/* Inner cards */
+body.light-mode .education-content,
+body.light-mode .skill-category,
+body.light-mode .goals-content,
+body.light-mode .certificate-card,
+body.light-mode .workshop-card,
+body.light-mode .project-card,
+body.light-mode .volunteering-card,
+body.light-mode .highlight-card {
+    background-color: #F8FAFC;
+    color: #334155;
+    border-color: #CBD5E1;
+}
+
+/* Inner card headings */
+body.light-mode .education-content h3,
+body.light-mode .skill-category h3,
+body.light-mode .certificate-card h3,
+body.light-mode .workshop-card h3,
+body.light-mode .project-card h3,
+body.light-mode .highlight-card h3 {
+    color: #1D4ED8;
+}
+
+/* Inner card paragraphs and lists */
+body.light-mode .education-content p,
+body.light-mode .skill-category li,
+body.light-mode .goals-content p,
+body.light-mode .certificate-card p,
+body.light-mode .workshop-card p,
+body.light-mode .workshop-card li,
+body.light-mode .project-card p,
+body.light-mode .volunteering-card p,
+body.light-mode .volunteering-card li,
+body.light-mode .highlight-card p {
+    color: #334155;
+}
+
+/* Links */
+body.light-mode .card a:not(.contact-button):not(.certificate-button):not(.social-button) {
+    color: #1D4ED8;
+}
+
+/* Footer */
+body.light-mode footer {
+    color: #334155;
+}
+
